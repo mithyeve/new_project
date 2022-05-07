@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="captcha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <form onsubmit="validateCaptcha()">
+   
+    
+    <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+     <div id="captcha">
+    </div>
+    <a class="btn" onclick="createCaptcha()"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+    <button type="submit">Submit</button>
+  </form>
+    
+    <script src="captcha.js"></script>
+    <script>window.addEventListener("load", createCaptcha);</script>
+	<div align="center">© 2021 Developed by <a href="https://www.phpscriptsonline.com">www.phpscriptsonline.com</a></div>
+</body>
+</html>
