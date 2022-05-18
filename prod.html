@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title> product</title>
+<link rel="stylesheet " href="prod.css">
+</head>
+<body>
+<div class="container ">
+<ul class="thumb">
+	<li><a href="Img1.jpeg" taret="imgbox"><img src="thumb1.jpg"></a></li>
+	<li><a href="Img2.jpeg" taret="imgbox"><img src="thumb2.jpg"></a></li>
+<li><a href="Img3.jpeg" taret="imgbox"><img src="thumb3.jpg"></a></li>
+</ul>
+<div class="imgbox"> 
+	<img src="Img1.jpeg">
+		</div>
+</div>
+
+
+
+
+
+
+
+
+<script src = "https://code.jquery.com/jquery-3.3.1.js"></script >
+<script type="text/javascript ">
+$(document).ready (function(){
+	is(.'thumb a').mouseover(fonction(e){
+		e.preventdefault();
+		$('.imgbox img').attr("src",$(this).attr("href"));
+})
+    })
+</script >
+</body>
+</html>
